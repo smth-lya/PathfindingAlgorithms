@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GraphVisualization.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="Layout"
+            Padding="30,0"
+            Spacing="25">
+            <HorizontalStackLayout Spacing="25" HorizontalOptions="CenterAndExpand">
+ 
+                <Button
+                    x:Name="RedrawButton"
+                    Text="Draw!" 
+                    FontAttributes="Bold"
+                    BorderWidth="3"
+                    TextColor="Black"
+                    BackgroundColor="Gold"
+                    Pressed="OnButtonPressedAnimation"
+                    Released="OnButtonReleasedAnimation"
+                    HorizontalOptions="CenterAndExpand" />
+                <Button
+                    x:Name="ClearButton"
+                    Text="Clear" 
+                    FontAttributes="Bold"
+                    BorderWidth="3"
+                    TextColor="Wheat"
+                    BackgroundColor="Black"
+                    Pressed="OnButtonPressedAnimation"
+                    Released="OnButtonReleasedAnimation"
+                    HorizontalOptions="CenterAndExpand" />
+                <Button
+                    x:Name="RandomButton"
+                    Text="Random" 
+                    FontAttributes="Bold"
+                    BorderWidth="3"
+                    BorderColor="PowderBlue"
+                    TextColor="WhiteSmoke"
+                    BackgroundColor="LightBlue"
+                    Pressed="OnButtonPressedAnimation"
+                    Released="OnButtonReleasedAnimation"
+                    HorizontalOptions="CenterAndExpand" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="25" HorizontalOptions="CenterAndExpand">
+                <Button
+                    x:Name="StartBrushButton"
+                    Text="" 
+                    FontAttributes="Bold"
+                    BorderWidth="3"
+                    TextColor="Black"
+                    BackgroundColor="LimeGreen"
+                    Pressed="OnButtonPressedAnimation"
+                    Released="OnButtonReleasedAnimation"
+                    HorizontalOptions="CenterAndExpand" />
+                <Button
+                    x:Name="EndBrushButton"
+                    Text="" 
+                    FontAttributes="Bold"
+                    BorderWidth="3"
+                    TextColor="Black"
+                    BackgroundColor="Crimson"
+                    Pressed="OnButtonPressedAnimation"
+                    Released="OnButtonReleasedAnimation"
+                    HorizontalOptions="CenterAndExpand"/>
+                <Button
+                    x:Name="WallBrushButton"
+                    Text="" 
+                    FontAttributes="Bold"
+                    BorderWidth="3"
+                    TextColor="Black"
+                    BackgroundColor="DarkGray"
+                    Pressed="OnButtonPressedAnimation"
+                    Released="OnButtonReleasedAnimation"
+                    HorizontalOptions="CenterAndExpand" />
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
